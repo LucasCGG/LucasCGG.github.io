@@ -1,0 +1,42 @@
+.container-decorations{
+    display: grid;
+    grid-template-columns: repeat(5, 25%);
+    z-index: 0;
+  }
+  .container-ball-topLeft{
+    grid-column: 5;
+    display:flex;
+  }
+  .container-ball-middleRight{
+    grid-row: 0;
+    display:flex;
+    align-items: center;
+  }
+
+  #ball-1{
+    position: relative;
+    top:-25vh;
+    left:-15vh;
+    background-color: #F02816;
+    width:40vh;
+    height:40vh;
+    border-radius:100%;
+    box-shadow: 0px 0px 0px 15vh #F26444, 0px 0px 0px 25vh #F2958D;
+    -moz-box-shadow: 0px 0px 0px 15vh #F26444, 0px 0px 0px 25vh #F2958D;
+    -webkit-box-shadow: 0px 0px 0px 15vh #F26444, 0px 0px 0px 25vh #F2958D;
+    -o-box-shadow: 0px 0px 0px 15vh #F26444, 0px 0px 0px 25vh #F2958D;
+    z-index:-10;
+  }
+  #ball-2{
+    position: relative;
+    left:-5vh;
+    background-color: #BD897E;
+    width:30vh;
+    height:30vh;
+    border-radius:100%;
+    box-shadow: 0px 0px 0px 15vh #95A78D, 0px 0px 0px 25vh #C8C6AF;
+    -moz-box-shadow: 0px 0px 0px 15vh #95A78D, 0px 0px 0px 25vh #C8C6AF;
+    -webkit-box-shadow: 0px 0px 0px 15vh #95A78D, 0px 0px 0px 25vh #C8C6AF;
+    -o-box-shadow: 0px 0px 0px 15vh #95A78D, 0px 0px 0px 25vh #C8C6AF;
+    z-index:-10;
+  }
