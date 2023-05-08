@@ -1,0 +1,205 @@
+.skills-bar{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skills-bar h5{
+    padding-top: 2vh;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+}
+.progress{
+    position: relative;
+    height: 2vh;
+    width: 80%;
+    border: 3px solid #f4a261;
+    border-radius: 20px;
+    margin:3vw;
+}
+.procent{
+    z-index: 1000;
+    position: absolute;
+    text-align: center;
+    width: 100%;;
+    font-weight: 700;
+    font-size: 1.15vh;
+}
+#JavaScript{
+    animation: progress_75 4s normal forwards;    
+    border-radius: 20px;
+    height: 100%;
+    width: 0;
+}
+#Java{
+    animation: progress_80 4s normal forwards;    
+    border-radius: 20px;
+    height: 100%;
+    width: 0;
+}
+#C{
+    animation: progress_50 4s normal forwards;    
+    border-radius: 20px;
+    height: 100%;
+    width: 0;
+}
+#Python{
+    animation: progress_40 4s normal forwards;    
+    border-radius: 20px;
+    height: 100%;
+    width: 0;
+}
+#HTML-CSS{
+    animation: progress_90 4s normal forwards;    
+    border-radius: 20px;
+    height: 100%;
+    width: 0;
+}
+#Mysql{
+    animation: progress_80 4s normal forwards;    
+    border-radius: 20px;
+    height: 100%;
+    width: 0;
+}
+#NoSql{
+    animation: progress_60 4s normal forwards;    
+    border-radius: 20px;
+    height: 100%;
+    width: 0;
+}
+
+
+#Drawing{
+    animation: progress_75 4s normal forwards;    
+    border-radius: 20px;
+    height: 100%;
+    width: 0;
+}
+#Photography{
+    animation: progress_60 4s normal forwards;    
+    border-radius: 20px;
+    height: 100%;
+    width: 0;
+}
+#Editing{
+    animation: progress_40 4s normal forwards;    
+    border-radius: 20px;
+    height: 100%;
+    width: 0;
+}
+#Modelling{
+    animation: progress_25 4s normal forwards;    
+    border-radius: 20px;
+    height: 100%;
+    width: 0;
+}
+
+@keyframes progress_5{
+    
+    0%{
+      width: 0;
+    }
+    100%{
+        width: 5%;
+        background-color: #f9ebee;
+    }
+}
+@keyframes progress_10{
+    0%{
+      width: 0;
+    }
+    100%{
+        width: 10%;
+        background-color: #f2d7d5 ;
+    }
+}
+@keyframes progress_20{
+    0%{
+      width: 0;
+    }
+    100%{
+        width: 20%;
+        background-color: #e6b8b7;
+    }
+}
+@keyframes progress_25{
+    0%{
+      width: 0;
+    }
+    100%{
+        width: 25%;
+        background-color: #d9a7a4;
+    }
+}
+@keyframes progress_40{
+    0%{
+      width: 0;
+    }
+    100%{
+        width: 40%;
+        background-color: #d0a3a2 ;
+    }
+}
+@keyframes progress_50{
+    0%{
+      width: 0;
+    }
+    100%{
+        width: 50%;
+        background-color: #c0bdbd ;
+    }
+}
+@keyframes progress_60{
+    0%{
+      width: 0;
+    }
+    100%{
+        width: 60%;
+        background-color: #b2c2c9 ;
+    }
+}
+@keyframes progress_70{
+    0%{
+      width: 0;
+    }
+    100%{
+        width: 70%;
+        background-color: #a9bdbf ;
+    }
+}
+@keyframes progress_75{
+    0%{
+      width: 0;
+    }
+    100%{
+        width: 75%;
+        background-color: #a9bdbf;
+    }
+}
+@keyframes progress_80{
+    0%{
+      width: 0;
+    }
+    100%{
+        width: 80%;
+        background-color: #a5c6d1 ;
+    }
+}
+@keyframes progress_90{
+    0%{
+      width: 0;
+    }
+    100%{
+        width: 90%;
+        background-color: #c1dbea ;
+    }
+}
+@keyframes progress_100{
+    0%{
+      width: 0;
+    }
+    100%{
+        width: 100%;
+        background-color: #e3e3e3 ;
+    }
+}

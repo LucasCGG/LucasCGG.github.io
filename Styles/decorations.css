@@ -1,42 +1,451 @@
-.container-decorations{
+@media(max-width: 2560px){
+  body {
+    overflow-x: hidden;
+  }
+  .container-decorations{
     display: grid;
     grid-template-columns: repeat(5, 25%);
-    z-index: 0;
-  }
-  .container-ball-topLeft{
-    grid-column: 5;
-    display:flex;
-  }
-  .container-ball-middleRight{
-    grid-row: 0;
-    display:flex;
-    align-items: center;
+    grid-template-rows: repeat(5, 25%);
+    z-index: -10000;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
 
-  #ball-1{
+  .container-decorations{
+    position: absolute;
+    width: 100%;
+    height: 200vw;
+  }
+
+.container-ball-topMiddle{
+  grid-row: 1;
+  grid-column: 3;
+}
+.container-ball-topRight{
+  grid-column: 5;
+}
+.container-ball-topLeft{
+  grid-column: 1;
+  grid-row:1 / span 4;
+}
+.container-ball-middleLeft{
+  grid-row: 3;
+  grid-column: 1;
+}
+.container-ball-middle{
+  grid-row: 2;
+  grid-column: 2;
+}
+.container-ball-middleRight{
+  grid-row: 2;
+  grid-column: 3;
+}
+.container-ball-left{
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.container-ball-bottom-middle
+{
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.container-ball-bottomRight{
+  grid-column: 5;
+  grid-row:2;
+}
+.container-ball-bottomLeft{
+  grid-row: 3;
+  grid-column: 1;
+}
+/*
+  BALLS ON INDEX 
+*/
+  #ball-1-index {
     position: relative;
-    top:-25vh;
-    left:-15vh;
+    top: -10vw;
+    left: -15vw;
     background-color: #F02816;
-    width:40vh;
-    height:40vh;
-    border-radius:100%;
-    box-shadow: 0px 0px 0px 15vh #F26444, 0px 0px 0px 25vh #F2958D;
-    -moz-box-shadow: 0px 0px 0px 15vh #F26444, 0px 0px 0px 25vh #F2958D;
-    -webkit-box-shadow: 0px 0px 0px 15vh #F26444, 0px 0px 0px 25vh #F2958D;
-    -o-box-shadow: 0px 0px 0px 15vh #F26444, 0px 0px 0px 25vh #F2958D;
-    z-index:-10;
+    width: clamp(2rem, 25vw, 20rem);
+    height: clamp(2rem, 25vw, 20rem);
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px clamp(2rem, 12vw, 15rem) #F26444, 0px 0px 0px clamp(5rem, 27vw, 15rem) #F2958D;
+    -moz-box-shadow: 0px 0px 0px clamp(2rem, 12vw, 15rem) #F26444, 0px 0px 0px clamp(5rem, 27vw, 15rem) #F2958D;
+    -webkit-box-shadow: 0px 0px 0px clamp(2rem, 12vw, 15rem) #F26444, 0px 0px 0px clamp(5rem, 27vw, 15rem) #F2958D;
+    -o-box-shadow: 0px 0px 0px clamp(2rem, 12vw, 15rem) #F26444, 0px 0px 0px clamp(5rem, 27vw, 15rem) #F2958D;
+    z-index: -10;
+    overflow: hidden;
   }
-  #ball-2{
+  #ball-2-index {
     position: relative;
-    left:-5vh;
+    left: -75%;
     background-color: #BD897E;
-    width:30vh;
-    height:30vh;
-    border-radius:100%;
-    box-shadow: 0px 0px 0px 15vh #95A78D, 0px 0px 0px 25vh #C8C6AF;
-    -moz-box-shadow: 0px 0px 0px 15vh #95A78D, 0px 0px 0px 25vh #C8C6AF;
-    -webkit-box-shadow: 0px 0px 0px 15vh #95A78D, 0px 0px 0px 25vh #C8C6AF;
-    -o-box-shadow: 0px 0px 0px 15vh #95A78D, 0px 0px 0px 25vh #C8C6AF;
+    width: clamp(3rem, 40vw, 25rem);
+    height: clamp(3rem, 40vw, 25rem) ;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 17vw #95A78D, 0px 0px 0px 33vw #C8C6AF;
+    -moz-box-shadow: 0px 0px 0px 17vw #95A78D, 0px 0px 0px 33vw #C8C6AF;
+    -webkit-box-shadow: 0px 0px 0px 17vw #95A78D, 0px 0px 0px 33vw #C8C6AF;
+    -o-box-shadow: 0px 0px 0px 17vw #95A78D, 0px 0px 0px 33vw #C8C6AF;
     z-index:-10;
   }
+/*
+  BALLS ON PROGRAMMING
+*/
+  #ball-1-programming{
+
+      background-color: #F02816;
+      width: clamp(2rem, 30vw, 45rem);
+      height: clamp(2rem, 30vw, 45rem);
+      border-radius: 100%;
+      box-shadow: 0px 0px 0px 12vw #F26444, 0px 0px 0px 20vw #F2958D;
+      -moz-box-shadow: 0px 0px 0px 12vw #F26444, 0px 0px 0px 20vw #F2958D;
+      -webkit-box-shadow: 0px 0px 0px 12vw #F26444, 0px 0px 0px 20vw #F2958D;
+      -o-box-shadow: 0px 0px 0px 12vw #F26444, 0px 0px 0px 20vw #F2958D;
+      z-index: -10;
+      overflow: hidden;
+  }
+
+  #ball-2-programming {
+    position: relative;
+    top:30%;
+    left: -25%;
+    background-color: #BD897E;
+    width: 40vw;
+    height: 40vw ;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 17vw #95A78D, 0px 0px 0px 33vw #C8C6AF;
+    -moz-box-shadow: 0px 0px 0px 17vw #95A78D, 0px 0px 0px 33vw #C8C6AF;
+    -webkit-box-shadow: 0px 0px 0px 17vw #95A78D, 0px 0px 0px 33vw #C8C6AF;
+    -o-box-shadow: 0px 0px 0px 17vw #95A78D, 0px 0px 0px 33vw #C8C6AF;
+    z-index:-10;
+  }
+  #ball-3-programming {
+    position: relative;
+    top:30%;
+    left: -50%;
+    background-color: #9E24AD;
+    width: 50vw;
+    height: 50vw;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 15vw #9E61F3, 0px 0px 0px 32vw #F2B3DC;
+    -moz-box-shadow: 0px 0px 0px 15vw #9E61F3, 0px 0px 0px 32vw #F2B3DC;
+    -webkit-box-shadow: 0px 0px 0px 15vw #9E61F3, 0px 0px 0px 32vw #F2B3DC;
+    -o-box-shadow: 0px 0px 0px 15vw #9E61F3, 0px 0px 0px 32vw #F2B3DC;
+    z-index:-10;
+  }
+
+  #ball-4-programming {
+    position: relative;
+    top:30%;
+    left: 100%;
+    background-color: #F26D6D;
+    width: 75vw;
+    height: 75vw;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 20vw #F26835, 0px 0px 0px 37vw #F2A341;
+    -moz-box-shadow: 0px 0px 0px 20vw #F26835, 0px 0px 0px 37vw #F2A341;
+    -webkit-box-shadow: 0px 0px 0px 20vw #F26835, 0px 0px 0px 37vw #F2A341;
+    -o-box-shadow: 0px 0px 0px 20vw #F26835, 0px 0px 0px 37vw #F2A341;
+    z-index:-10;
+  }
+  #ball-5-programming {
+    position: relative;
+    left: -150%;
+    background-color: #BF5669;
+    width: 60vw;
+    height: 60vw;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 15vw #ADD4D9, 0px 0px 0px 37vw #F0AFD6;
+    -moz-box-shadow: 0px 0px 0px 15vw #ADD4D9, 0px 0px 0px 37vw #F0AFD6;
+    -webkit-box-shadow: 0px 0px 0px 15vw #ADD4D9, 0px 0px 0px 37vw #F0AFD6;
+    -o-box-shadow: 0px 0px 0px 15vw #ADD4D9, 0px 0px 0px 37vw #F0AFD6;
+    z-index:-10;
+  }
+
+  /*
+    BALLS ON ABOUT PAGE
+  */
+
+  #ball-1-about{
+    position: relative;
+    top: -3vh;
+    left: -20vw;
+    background-color: #F02816;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 12vw #F26444, 0px 0px 0px 25vw #F2958D;
+    -moz-box-shadow: 0px 0px 0px 12vw #F26444, 0px 0px 0px 25vw #F2958D;
+    -webkit-box-shadow: 0px 0px 0px 12vw #F26444, 0px 0px 0px 25vw #F2958D;
+    -o-box-shadow: 0px 0px 0px 12vw #F26444, 0px 0px 0px 25vw #F2958D;
+    z-index: -10;
+    overflow: hidden;
+  }
+
+  #ball-2-about{
+    position: relative;
+    background-color: #9E24AD;
+    width: 50vw;
+    height: 50vw;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 15vw #9E61F3, 0px 0px 0px 32vw #F2B3DC;
+    -moz-box-shadow: 0px 0px 0px 15vw #9E61F3, 0px 0px 0px 32vw #F2B3DC;
+    -webkit-box-shadow: 0px 0px 0px 15vw #9E61F3, 0px 0px 0px 32vw #F2B3DC;
+    -o-box-shadow: 0px 0px 0px 15vw #9E61F3, 0px 0px 0px 32vw #F2B3DC;
+    z-index:-10;
+  }
+
+  #ball-3-about{
+    position: relative;
+    top:100%;
+    left: 75%;
+    background-color: #BD897E;
+    width: 30vw;
+    height: 30vw ;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 10vw #95A78D, 0px 0px 0px 25vw #C8C6AF;
+    -moz-box-shadow: 0px 0px 0px 10vw #95A78D, 0px 0px 0px 25vw #C8C6AF;
+    -webkit-box-shadow: 0px 0px 0px 10vw #95A78D, 0px 0px 0px 25vw #C8C6AF;
+    -o-box-shadow: 0px 0px 0px 10vw #95A78D, 0px 0px 0px 25vw #C8C6AF;
+    z-index:-10;
+  }
+
+  /**
+    BALLS ON CONTACT
+  */
+
+  #ball-1-contact{
+    position: relative;
+    background-color: #9E24AD;
+    width: 50vw;
+    height: 50vw;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 15vw #9E61F3, 0px 0px 0px 32vw #F2B3DC;
+    -moz-box-shadow: 0px 0px 0px 15vw #9E61F3, 0px 0px 0px 32vw #F2B3DC;
+    -webkit-box-shadow: 0px 0px 0px 15vw #9E61F3, 0px 0px 0px 32vw #F2B3DC;
+    -o-box-shadow: 0px 0px 0px 15vw #9E61F3, 0px 0px 0px 32vw #F2B3DC;
+    z-index:-10;
+  }
+  #ball-2-contact{
+    position: relative;
+    left: 50%;
+    background-color: #F02816;
+    width: 35vw;
+    height: 35vw;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 12vw #F26444, 0px 0px 0px 25vw #F2958D;
+    -moz-box-shadow: 0px 0px 0px 12vw #F26444, 0px 0px 0px 25vw #F2958D;
+    -webkit-box-shadow: 0px 0px 0px 12vw #F26444, 0px 0px 0px 25vw #F2958D;
+    -o-box-shadow: 0px 0px 0px 12vw #F26444, 0px 0px 0px 25vw #F2958D;
+    z-index: -10000;
+  }
+
+  /*
+  * PHOTOGRAPHY
+  */
+  #ball-1-photography{
+    position: relative;
+    top:0;
+    left: -50%;
+    background-color: #F02816;
+    width: 40vw;
+    height: 40vw;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 15vw #F26444, 0px 0px 0px 30vw #F2958D;
+    -moz-box-shadow: 0px 0px 0px 15vw #F26444, 0px 0px 0px 30vw #F2958D;
+    -webkit-box-shadow: 0px 0px 0px 15vw #F26444, 0px 0px 0px 30vw #F2958D;
+    -o-box-shadow: 0px 0px 0px 15vw #F26444, 0px 0px 0px 30vw #F2958D;
+    z-index: -10000;
+  }
+
+  #ball-2-photography{
+    position: relative;
+    left: -170%;
+    background-color: #F26D6D;
+    width: 75vw;
+    height: 75vw;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 20vw #F26835, 0px 0px 0px 37vw #F2A341;
+    -moz-box-shadow: 0px 0px 0px 20vw #F26835, 0px 0px 0px 37vw #F2A341;
+    -webkit-box-shadow: 0px 0px 0px 20vw #F26835, 0px 0px 0px 37vw #F2A341;
+    -o-box-shadow: 0px 0px 0px 20vw #F26835, 0px 0px 0px 37vw #F2A341;
+    z-index:-10;
+  }
+
+  #ball-3-photography{
+    position: relative;
+    background-color: #BF5669;
+    width: 50vw;
+    height: 50vw;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 25vw #ADD4D9, 0px 0px 0px 45vw #F0AFD6;
+    -moz-box-shadow: 0px 0px 0px 25vw #ADD4D9, 0px 0px 0px 45vw #F0AFD6;
+    -webkit-box-shadow: 0px 0px 0px 25vw #ADD4D9, 0px 0px 0px 45vw #F0AFD6;
+    -o-box-shadow: 0px 0px 0px 25vw #ADD4D9, 0px 0px 0px 45vw #F0AFD6;
+    z-index:-10;
+  }
+  #ball-4-photography{
+    position: relative;
+    background-color: #8e7b7b  ;
+    width: 50vw;
+    height: 50vw;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 25vw #738FAF, 0px 0px 0px 45vw #C5DCE7;
+    -moz-box-shadow: 0px 0px 0px 25vw #738FAF, 0px 0px 0px 45vw #C5DCE7;
+    -webkit-box-shadow: 0px 0px 0px 25vw #738FAF, 0px 0px 0px 45vw #C5DCE7;
+    -o-box-shadow: 0px 0px 0px 25vw #738FAF, 0px 0px 0px 45vw #C5DCE7;
+    z-index:-10;
+  }
+  #ball-5-photography{
+    position: relative;
+    background-color: #5E4848;
+    width: 50vw;
+    height: 50vw;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 25vw #B38181, 0px 0px 0px 45vw #d3cece;
+    -moz-box-shadow: 0px 0px 0px 25vw #B38181, 0px 0px 0px 45vw #d3cece;
+    -webkit-box-shadow: 0px 0px 0px 25vw #B38181, 0px 0px 0px 45vw #d3cece;
+    -o-box-shadow: 0px 0px 0px 25vw #B38181, 0px 0px 0px 45vw #d3cece;
+    z-index:-10;
+  }
+
+  #ball-6-photography{
+    position: relative;
+    background-color: #A5B8B8;
+    width: 40vw;
+    height: 40vw;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 15vw #c3d8c3, 0px 0px 0px 32vw #dadddc;
+    -moz-box-shadow: 0px 0px 0px 15vw #c3d8c3, 0px 0px 0px 32vw #dadddc;
+    -webkit-box-shadow: 0px 0px 0px 15vw #c3d8c3, 0px 0px 0px 32vw #dadddc;
+    -o-box-shadow: 0px 0px 0px 15vw #c3d8c3, 0px 0px 0px 32vw #dadddc;
+    z-index:-10;
+  }
+  #ball-7-photography{
+    position: relative;
+    background-color: #875D4A;
+    width: 55vw;
+    height: 55vw;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 20vw #cfc49d , 0px 0px 0px 35vw #b4cec7;
+    -moz-box-shadow: 0px 0px 0px 20vw #cfc49d , 0px 0px 0px 35vw #b4cec7;
+    -webkit-box-shadow: 0px 0px 0px 20vw #cfc49d , 0px 0px 0px 35vw #b4cec7;
+    -o-box-shadow: 0px 0px 0px 20vw #cfc49d , 0px 0px 0px 35vw #b4cec7;
+    z-index:-10;
+  }
+
+  #ball-8-photography{
+    position: relative;
+    background-color: #FEB5A7 ;
+    width: 55vw;
+    height: 55vw;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 20vw #E5D9CF, 0px 0px 0px 45vw #aed1bc;
+    -moz-box-shadow: 0px 0px 0px 20vw #E5D9CF, 0px 0px 0px 45vw #aed1bc;
+    -webkit-box-shadow: 0px 0px 0px 20vw #E5D9CF, 0px 0px 0px 45vw #b7dac5;
+    -o-box-shadow: 0px 0px 0px 20vw #E5D9CF, 0px 0px 0px 45vw #aed1bc;
+    z-index:-10;
+  }
+  #ball-9-photography{
+    position: relative;
+    background-color: #FDB813;
+    width: 55vw;
+    height: 55vw;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 20vw #f7bf8e, 0px 0px 0px 45vw #f5b8cd;
+    -moz-box-shadow: 0px 0px 0px 20vw #f7bf8e, 0px 0px 0px 45vw #f5b8cd;
+    -webkit-box-shadow: 0px 0px 0px 20vw #f7bf8e, 0px 0px 0px 45vw #f5b8cd;
+    -o-box-shadow: 0px 0px 0px 20vw #f7bf8e, 0px 0px 0px 45vw #f5b8cd;
+    z-index:-10;
+  }
+  #ball-10-photography{
+    position: relative;
+    background-color: #FDB813;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 12vw #f7bf8e, 0px 0px 0px 23vw #f5b8cd;
+    -moz-box-shadow: 0px 0px 0px 12vw #f7bf8e, 0px 0px 0px 23vw #f5b8cd;
+    -webkit-box-shadow: 0px 0px 0px 12vw #f7bf8e, 0px 0px 0px 23vw #f5b8cd;
+    -o-box-shadow: 0px 0px 0px 12vw #f7bf8e, 0px 0px 0px 23vw #f5b8cd;
+    z-index:-10;
+  }
+
+  /*
+  * DRAWING
+  */
+  #ball-1-drawing{
+    position: relative;
+    background-color: #BF5669;
+    width: 55vw;
+    height: 55vw;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 20vw #ADD4D9, 0px 0px 0px 37vw #F0AFD6;
+    -moz-box-shadow: 0px 0px 0px 20vw #ADD4D9, 0px 0px 0px 37vw #F0AFD6;
+    -webkit-box-shadow: 0px 0px 0px 20vw #ADD4D9, 0px 0px 0px 37vw #F0AFD6;
+    -o-box-shadow: 0px 0px 0px 20vw #ADD4D9, 0px 0px 0px 37vw #F0AFD6;
+    z-index:-10;
+  }
+  #ball-2-drawing {
+    position: relative;
+    top:30%;
+    left: -25%;
+    background-color: #BD897E;
+    width: 40vw;
+    height: 40vw ;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 17vw #95A78D, 0px 0px 0px 33vw #C8C6AF;
+    -moz-box-shadow: 0px 0px 0px 17vw #95A78D, 0px 0px 0px 33vw #C8C6AF;
+    -webkit-box-shadow: 0px 0px 0px 17vw #95A78D, 0px 0px 0px 33vw #C8C6AF;
+    -o-box-shadow: 0px 0px 0px 17vw #95A78D, 0px 0px 0px 33vw #C8C6AF;
+    z-index:-10;
+  }
+
+  #ball-3-drawing{
+    position: relative;
+    background-color: #F02816;
+    width: 60vw;
+    height: 60vw;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 24vw #F26444, 0px 0px 0px 48vw #F2958D;
+    -moz-box-shadow: 0px 0px 0px 24vw #F26444, 0px 0px 0px 48vw #F2958D;
+    -webkit-box-shadow: 0px 0px 0px 24vw #F26444, 0px 0px 0px 48vw #F2958D;
+    -o-box-shadow: 0px 0px 0px 24vw #F26444, 0px 0px 0px 48vw #F2958D;
+    z-index: -10;
+    overflow: hidden;
+  }
+
+  /*
+  * 3D Modelling
+  */
+
+  #ball-1-Model{
+    position: relative;
+    background-color: #F02816;
+    width: 55vw;
+    height: 55vw;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 12vw #F26444, 0px 0px 0px 25vw #F2958D;
+    -moz-box-shadow: 0px 0px 0px 12vw #F26444, 0px 0px 0px 25vw #F2958D;
+    -webkit-box-shadow: 0px 0px 0px 12vw #F26444, 0px 0px 0px 25vw #F2958D;
+    -o-box-shadow: 0px 0px 0px 12vw #F26444, 0px 0px 0px 25vw #F2958D;
+    z-index: -10;
+    overflow: hidden;
+  }
+  #ball-2-Model{
+    position: relative;
+    background-color: #9E24AD;
+    width: 45vw;
+    height: 45vw;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 15vw #9E61F3, 0px 0px 0px 30vw #F2B3DC;
+    -moz-box-shadow: 0px 0px 0px 15vw #9E61F3, 0px 0px 0px 30vw #F2B3DC;
+    -webkit-box-shadow: 0px 0px 0px 15vw #9E61F3, 0px 0px 0px 30vw #F2B3DC;
+    -o-box-shadow: 0px 0px 0px 15vw #9E61F3, 0px 0px 0px 30vws #F2B3DC;
+    z-index: -10;
+    overflow: hidden;
+  }
+}
+
