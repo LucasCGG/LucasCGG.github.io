@@ -4,11 +4,10 @@
   }
   .container-decorations{
     display: grid;
-    grid-template-columns: repeat(5, 25%);
-    grid-template-rows: repeat(5, 25%);
+    grid-template-columns: repeat(5, 15%);
+    grid-template-rows: repeat(5, 15%);
     z-index: -10000;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    padding-left:10vw;
   }
 
   .container-decorations{
@@ -67,27 +66,27 @@
     top: -10vw;
     left: -15vw;
     background-color: #F02816;
-    width: clamp(2rem, 25vw, 20rem);
-    height: clamp(2rem, 25vw, 20rem);
+    width: clamp(2rem, 25vw, 40rem);
+    height: clamp(2rem, 25vw, 40rem);
     border-radius: 100%;
-    box-shadow: 0px 0px 0px clamp(2rem, 12vw, 15rem) #F26444, 0px 0px 0px clamp(5rem, 27vw, 15rem) #F2958D;
-    -moz-box-shadow: 0px 0px 0px clamp(2rem, 12vw, 15rem) #F26444, 0px 0px 0px clamp(5rem, 27vw, 15rem) #F2958D;
-    -webkit-box-shadow: 0px 0px 0px clamp(2rem, 12vw, 15rem) #F26444, 0px 0px 0px clamp(5rem, 27vw, 15rem) #F2958D;
-    -o-box-shadow: 0px 0px 0px clamp(2rem, 12vw, 15rem) #F26444, 0px 0px 0px clamp(5rem, 27vw, 15rem) #F2958D;
+    box-shadow: 0px 0px 0px clamp(2rem, 12vw, 10rem) #F26444, 0px 0px 0px clamp(5rem, 20vw, 25rem) #F2958D;
+    -moz-box-shadow: 0px 0px 0px clamp(2rem, 12vw, 10rem) #F26444, 0px 0px 0px clamp(5rem, 20vw, 25rem) #F2958D;
+    -webkit-box-shadow: 0px 0px 0px clamp(2rem, 12vw, 10rem) #F26444, 0px 0px 0px clamp(5rem, 20vw, 25rem) #F2958D;
+    -o-box-shadow: 0px 0px 0px clamp(2rem, 12vw, 10rem) #F26444, 0px 0px 0px clamp(5rem, 20vw, 15rem) #F2958D;
     z-index: -10;
     overflow: hidden;
   }
   #ball-2-index {
     position: relative;
-    left: -75%;
+    left: -70%;
     background-color: #BD897E;
-    width: clamp(3rem, 40vw, 25rem);
-    height: clamp(3rem, 40vw, 25rem) ;
+    width: clamp(3rem, 40vw, 70rem);
+    height: clamp(3rem, 40vw, 70rem) ;
     border-radius: 100%;
-    box-shadow: 0px 0px 0px 17vw #95A78D, 0px 0px 0px 33vw #C8C6AF;
-    -moz-box-shadow: 0px 0px 0px 17vw #95A78D, 0px 0px 0px 33vw #C8C6AF;
-    -webkit-box-shadow: 0px 0px 0px 17vw #95A78D, 0px 0px 0px 33vw #C8C6AF;
-    -o-box-shadow: 0px 0px 0px 17vw #95A78D, 0px 0px 0px 33vw #C8C6AF;
+    box-shadow: 0px 0px 0px  clamp(2rem, 17vw, 20rem) #95A78D, 0px 0px 0px clamp(5rem,33vw, 45rem) #C8C6AF;
+    -moz-box-shadow: 0px 0px 0px clamp(2rem, 17vw, 20rem) #95A78D, 0px 0px 0px clamp(5rem,33vw, 45rem) #C8C6AF;
+    -webkit-box-shadow: 0px 0px 0px clamp(2rem,17vw, 20rem) #95A78D, 0px 0px 0px clamp(5rem,33vw, 45rem)#C8C6AF;
+    -o-box-shadow: 0px 0px 0px clamp(2rem, 17vw, 20rem) #95A78D, 0px 0px 0px clamp(5rem,33vw, 45rem) #C8C6AF;
     z-index:-10;
   }
 /*
@@ -99,10 +98,10 @@
       width: clamp(2rem, 30vw, 45rem);
       height: clamp(2rem, 30vw, 45rem);
       border-radius: 100%;
-      box-shadow: 0px 0px 0px 12vw #F26444, 0px 0px 0px 20vw #F2958D;
-      -moz-box-shadow: 0px 0px 0px 12vw #F26444, 0px 0px 0px 20vw #F2958D;
-      -webkit-box-shadow: 0px 0px 0px 12vw #F26444, 0px 0px 0px 20vw #F2958D;
-      -o-box-shadow: 0px 0px 0px 12vw #F26444, 0px 0px 0px 20vw #F2958D;
+      box-shadow: 0px 0px 0px clamp(3rem, 12vw, 20rem) #F26444, 0px 0px 0px clamp(7rem,25vw,35rem) #F2958D;
+      -moz-box-shadow: 0px 0px 0px clamp(3rem, 12vw, 20rem) #F26444, 0px 0px 0px clamp(7rem,25vw,35rem) #F2958D;
+      -webkit-box-shadow: 0px 0px 0px clamp(3rem, 12vw, 20rem) #F26444, 0px 0px 0px clamp(7rem,25vw,35rem) #F2958D;
+      -o-box-shadow: 0px 0px 0px clamp(3rem, 12vw, 20rem) #F26444, 0px 0px 0px clamp(7rem,25vw,35rem) #F2958D;
       z-index: -10;
       overflow: hidden;
   }
@@ -110,15 +109,15 @@
   #ball-2-programming {
     position: relative;
     top:30%;
-    left: -25%;
+    left: 0;
     background-color: #BD897E;
-    width: 40vw;
-    height: 40vw ;
+    width: clamp(10rem,50vw,80rem);
+    height: clamp(10rem,50vw,80rem) ;
     border-radius: 100%;
-    box-shadow: 0px 0px 0px 17vw #95A78D, 0px 0px 0px 33vw #C8C6AF;
-    -moz-box-shadow: 0px 0px 0px 17vw #95A78D, 0px 0px 0px 33vw #C8C6AF;
-    -webkit-box-shadow: 0px 0px 0px 17vw #95A78D, 0px 0px 0px 33vw #C8C6AF;
-    -o-box-shadow: 0px 0px 0px 17vw #95A78D, 0px 0px 0px 33vw #C8C6AF;
+    box-shadow: 0px 0px 0px clamp(5rem,17vw,40rem) #95A78D, 0px 0px 0px clamp(12rem,25vw,70rem) #C8C6AF;
+    -moz-box-shadow: 0px 0px 0px clamp(5rem,17vw,40rem) #95A78D, 0px 0px 0px clamp(12rem,25vw,70rem) #C8C6AF;
+    -webkit-box-shadow: 0px 0px 0px clamp(5rem,17vw,40rem)  #95A78D, 0px 0px 0px clamp(12rem,25vw,70rem)  #C8C6AF;
+    -o-box-shadow: 0px 0px 0px clamp(5rem,17vw,40rem) #95A78D, 0px 0px 0px clamp(12rem,25vw,70rem) #C8C6AF;
     z-index:-10;
   }
   #ball-3-programming {
@@ -138,17 +137,16 @@
 
   #ball-4-programming {
     position: relative;
-    top:30%;
-    left: 100%;
     background-color: #F26D6D;
-    width: 75vw;
-    height: 75vw;
+    width: 60vw;
+    height: 60vw;
     border-radius: 100%;
     box-shadow: 0px 0px 0px 20vw #F26835, 0px 0px 0px 37vw #F2A341;
     -moz-box-shadow: 0px 0px 0px 20vw #F26835, 0px 0px 0px 37vw #F2A341;
     -webkit-box-shadow: 0px 0px 0px 20vw #F26835, 0px 0px 0px 37vw #F2A341;
     -o-box-shadow: 0px 0px 0px 20vw #F26835, 0px 0px 0px 37vw #F2A341;
     z-index:-10;
+    overflow: hidden;
   }
   #ball-5-programming {
     position: relative;
